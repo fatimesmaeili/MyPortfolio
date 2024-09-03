@@ -1,0 +1,155 @@
+:root {
+    --primary-color: #55c7bc;
+    --text-color: #74a39e;
+    --background-light: #f4e9e9;
+    --header-height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 110%;
+    background-color:#7FA1C3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+    color: #ffffff;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.header-background {
+    background: linear-gradient(rgba(200, 198, 213, 0.7), rgba(29, 50, 90, 0.9)), 
+                url("./assets/FE.jpg") center center fixed;
+    background-size:cover;
+    text-align: center;
+    height: 100vh; 
+    display:flex;
+    /flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(40, 4, 4, 0.5);
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+}
+
+li {
+    font-style: italic;
+    margin: 0 10px;
+    list-style: none;
+    list-style-position: inside;
+}
+
+nav ul li a {
+    color: rgb(218, 221, 229);
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, cursive;
+    font-size: 1rem;
+}
+
+.header-content img {
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+.header-content h1, .header-content p {
+    margin: 0.5rem 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+#about {
+    margin-top: 0px;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    border-radius: 2%;
+    text-align: center;
+}
+
+.profile-photo {
+    max-width: 40%;
+    height: auto; 
+    border-radius: 50%; 
+}
+
+#portfolio {
+    background-color: #E2DAD6; 
+    padding: 15px;
+    border-radius: 0.5%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.project {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #F5EDED;
+    margin: 10px;
+    display: inline-block;
+    line-height: 200px;
+}
+
+#contact {
+    background-color: #7FA1C3; 
+    padding: 15px;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.td-btn {
+    padding: 12px 36px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+     background-color: #0fbfbf; 
+
+}
+
+footer {
+    background-color: #BC9F8B;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Additional Styles */
+h2 {
+    color: #546e93;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, cursive;
+    font-size: 1.8rem;
+}
+
+
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+  
+  .profile-photo {
+        width: 50%; 
+        margin: 0 auto; 
+    }
+}
+a{
+    color:white;
+    margin: 10px 20px;
+    text-decoration:underline;
+}
